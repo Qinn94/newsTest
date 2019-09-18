@@ -6,10 +6,10 @@ Vue.use(Router)
 
 export default new Router({
   mode:'history',
-  base:'/dist/',
+  base:'/newsTest/',
   routes: [
     {
-      path: '/',
+      path: '',
       component: NewsList
     }
   ]
