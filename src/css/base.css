@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+  /*10 ÷ 16 × 100% = 62.5%*/
+}
+
+html,
+body {
+  -font-family: "微软雅黑";
+  background: #f0f2f5;
+}
+
+html.lock,
+body.lock {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pr {
+  position: relative;
+}
+
+.dn {
+  display: none;
+}
+
+.noDataBox {
+  height: 190px;
+  width: 100%;
+  background: url(../images/noData.png) no-repeat center top;
+  display: none;
+  background-size: auto 90%;
+}
+
+.noDataBox.show {
+  display: block;
+}
+
+.errorBox {
+  height: 190px;
+  width: 100%;
+  background: url(../images/wifiWrong.png) no-repeat center top;
+  display: none;
+  background-size: auto 90%;
+}
+
+.errorBox.show {
+  display: block;
+}
+
+#backTop {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+}
+
+#backTop.show {
+  display: block;
+}
+
+#backTop a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: url(../images/backTop.png) no-repeat;
+}

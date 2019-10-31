@@ -1,0 +1,302 @@
+html {
+	font-size: 62.5%;
+	/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+html,
+body {
+	font-family: "微软雅黑";
+	background: #f0f2f5;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.pa {
+	position: absolute;
+}
+
+.pr {
+	position: relative;
+}
+
+.dn {
+	display: none;
+}
+
+#top {
+	height: 68px;
+	background: url(../img/proDetailTopBg.png) no-repeat;
+	background-size: 100%;
+	padding: 0 5%;
+	color: #fff;
+	margin-bottom: 9px;
+	position: relative;
+}
+
+#top a.backA {
+	width: 12px;
+	height: 21px;
+	background: url(../img/backBG.png) no-repeat;
+	background-size: 100%;
+	left: 5%;
+	top: 15px;
+	position: absolute;
+}
+
+h1 {
+	min-height: 58px;
+	width: 80%;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.topDataBox {
+	height: 56px;
+}
+
+.topDataBox .dataBoxL {
+	-width: 53%;
+}
+
+.dataBoxL p.syP {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.dataBoxL p.syText {
+	width: 62px;
+	height: 18px;
+	border: 1px solid #fff;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.topDataBox .xian {
+	width: 1px;
+	height: 40px;
+	margin: 10px 5%;
+	background: #fff;
+}
+
+.dataBoxR {
+	width: 30%;
+}
+
+.dataBoxR .qtP {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.dataBoxR .qtP span {
+	font-size: 25px;
+}
+
+.dataBoxR .cpztP {
+	width: 33px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	background: #84d334;
+	border-radius: 4px;
+}
+
+.proDetailBox,
+.finaCycleBox {
+	height: auto;
+	background: #fff;
+	padding: 0 5%;
+	color: #444;
+	padding-bottom: 20px;
+	margin-bottom: 12px;
+}
+
+h2 {
+	height: 50px;
+	padding: 12px 0;
+}
+
+h2 span {
+	display: inline-block;
+	height: 26px;
+	color: #444444;
+	font-size: 16px;
+	border-bottom: 2px solid #2388f0;
+}
+
+.proDetailBox ul li {
+	-height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+}
+
+.proDetailBox ul li:after {
+	content: "";
+	clear: both;
+	/*清除浮动*/
+	display: block;
+	/*确保该元素是一个块级元素*/
+}
+
+.proDetailBox ul li label {
+	width: 32%;
+	display: inline-block;
+	text-align: right;
+	padding-right: 5%;
+	float: left;
+}
+
+.proDetailBox ul li span {
+	padding-left: 5%;
+	border-left: 1px solid #a6a6a6;
+	display: block;
+	float: left;
+	width: 64%;
+	min-height: 32px;
+}
+
+.finaCycleBox {
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+.finaCycleBox h2 {
+	padding: 12px 5%;
+}
+
+.finaCycleList {
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.finaCycleList .rangeDiv {
+	width: 84.4%;
+	height: 10px;
+	background: #ccc;
+	margin-left: 15.6%;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.finaCycleList ul {
+	width: 300%;
+	height: 100%;
+}
+
+.finaCycleList ul li {
+	float: left;
+	width: 33.33%;
+}
+
+.finaCycleList .rangeDiv p {
+	width: 76%;
+	height: 100%;
+	background: url(../img/finaCycleP.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.finaCycleList p.finaP {
+	width: 82%;
+	margin: 20px auto;
+	font-size: 14px;
+}
+
+.finaCycleList p.finaP:after {
+	content: "";
+	clear: both;
+	/*清除浮动*/
+	display: block;
+	/*确保该元素是一个块级元素*/
+}
+
+.finaCycleList p.finaP span:first-child {
+	float: left;
+}
+
+.finaCycleList p.finaP span:last-child {
+	float: right;
+}
+
+.finaCycleListConn2 .rangeDiv {
+	width: 100%;
+	margin-left: 0;
+	border-radius: 0;
+}
+
+.finaCycleListConn2 .rangeDiv p {
+	width: 64.5%;
+	margin: 0 auto;
+}
+
+.finaCycleListConn3 .rangeDiv {
+	margin-left: 0;
+	border-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.finaCycleListConn3 .rangeDiv p {
+	float: right;
+}
+
+.finaMark {
+	width: 48px;
+	height: 26px;
+	background: url(../img/finaMarkBG.png) no-repeat;
+	background-size: 100% 100%;
+	color: #2388f0;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	left: 50%;
+	top: 33px;
+	margin-left: -24px;
+}
+
+.swiperBtn {
+	width: 100px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 320px) {
+	.proDetailBox ul li label {
+		width: 35%;
+	}
+}

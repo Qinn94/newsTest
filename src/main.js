@@ -3,22 +3,24 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './css/base.css'
+import './css/commom.css'
 import axios from 'axios'
-import Qs from 'qs'
-
-// import base from "./base"
-// Vue.use(base)
+import '../src/js/rem'
+import store from "./store/store"
 
 
-
-Vue.prototype.axios = axios;
-Vue.prototype.qs = Qs;
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
+axios.defaults.baseURL = "https://goldeye.cfbond.com/"
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  store,
+  components: {
+    App
+  },
   template: '<App/>'
 })
